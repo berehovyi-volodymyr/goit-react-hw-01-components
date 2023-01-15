@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.status {
+  margin-right: 10px;
+}
+.avatar {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.status {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+}
+
+.offline {
+  background-color: rgb(175, 28, 58);
+}
+
+.online {
+  background-color: rgb(68, 180, 68);
+}
