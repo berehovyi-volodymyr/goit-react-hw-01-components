@@ -20,5 +20,5 @@ export default FriendListItem;
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.number.isRequired,
-  isOnline: PropTypes.bool,
+  isOnline: PropTypes.bool.isRequired,
 };

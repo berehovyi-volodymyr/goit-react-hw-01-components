@@ -2,7 +2,7 @@ import styles from './statistics.module.css';
 import PropTypes from 'prop-types';
 import { getRandomHexColor } from './color';
 
-const Statistics = ({ title, stats }) => {
+const Statistics = ({ title = '', stats = [] }) => {
   const elements = stats.map(stat => (
     <li
       style={{
@@ -27,11 +27,6 @@ const Statistics = ({ title, stats }) => {
 };
 
 export default Statistics;
-
-Statistics.defaultProps = {
-  title: '',
-  stats: [],
-};
 
 Statistics.propTypes = {
   title: PropTypes.string,
